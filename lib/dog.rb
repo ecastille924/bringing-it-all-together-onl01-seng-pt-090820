@@ -68,6 +68,7 @@ class Dog
     AND breed = ? 
     SQL
     
-    dog = DB[:conn].execute(sql, name, breed)
+    dog = DB[:conn].execute(sql, name, breed).first
+    
   end
 end

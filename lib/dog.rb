@@ -46,9 +46,9 @@ class Dog
   end
   
   def self.new_from_db
-      id = [0]
-      name = [1]
-      breed = [2]
+      id = row[0]
+      name = row[1]
+      breed = row[2]
     
     self.new(attributes_hash)
   end
